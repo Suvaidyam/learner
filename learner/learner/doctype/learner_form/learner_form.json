@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2024-01-16 15:24:52.046358",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "mobile_no",
+  "email",
+  "fathers_name",
+  "mothers_name",
+  "state",
+  "district",
+  "block",
+  "panchayat",
+  "village",
+  "education_section",
+  "education",
+  "section_break_dcmy",
+  "published",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "education",
+   "fieldtype": "Table",
+   "label": "Education",
+   "options": "Education"
+  },
+  {
+   "fieldname": "education_section",
+   "fieldtype": "Section Break",
+   "label": "Education"
+  },
+  {
+   "fieldname": "section_break_dcmy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "default": "+91-",
+   "fieldname": "mobile_no",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Mobile No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fathers_name",
+   "fieldtype": "Data",
+   "label": "Father's Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mothers_name",
+   "fieldtype": "Data",
+   "label": "Mother's Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block",
+   "reqd": 1
+  },
+  {
+   "fieldname": "panchayat",
+   "fieldtype": "Data",
+   "label": "Panchayat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village",
+   "reqd": 1
+  }
+ ],
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2024-01-16 16:50:49.702584",
+ "modified_by": "Administrator",
+ "module": "Learner",
+ "name": "Learner-Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "learner-form",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-16 15:27:45.489239",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "passing_year",
+  "passing_marks",
+  "percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "\n10th\n12th\nGraduation\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "passing_year",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Passing Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "passing_marks",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Passing Marks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Float",
+   "label": "Percentage",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-16 15:40:10.827854",
+ "modified_by": "Administrator",
+ "module": "Learner",
+ "name": "Education",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

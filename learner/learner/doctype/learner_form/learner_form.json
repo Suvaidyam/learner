@@ -10,7 +10,7 @@
   "mobile_no",
   "email",
   "fathers_name",
-  "mothers_name",
+  "column_break_zypm",
   "state",
   "district",
   "block",
@@ -19,8 +19,7 @@
   "education_section",
   "education",
   "section_break_dcmy",
-  "published",
-  "route"
+  "published"
  ],
  "fields": [
   {
@@ -43,11 +42,6 @@
    "fieldname": "published",
    "fieldtype": "Check",
    "label": "Published"
-  },
-  {
-   "fieldname": "route",
-   "fieldtype": "Data",
-   "label": "route"
   },
   {
    "fieldname": "full_name",
@@ -76,33 +70,33 @@
    "reqd": 1
   },
   {
-   "fieldname": "mothers_name",
-   "fieldtype": "Data",
-   "label": "Mother's Name",
-   "reqd": 1
-  },
-  {
+   "default": "Bihar",
    "fieldname": "state",
    "fieldtype": "Data",
    "label": "State",
+   "read_only": 1,
    "reqd": 1
   },
   {
+   "default": "Saran",
    "fieldname": "district",
    "fieldtype": "Data",
    "label": "District",
+   "read_only": 1,
    "reqd": 1
   },
   {
    "fieldname": "block",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Block",
+   "options": "\nAmnour\nGarkha",
    "reqd": 1
   },
   {
    "fieldname": "panchayat",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Panchayat",
+   "options": "Panchyat",
    "reqd": 1
   },
   {
@@ -110,11 +104,15 @@
    "fieldtype": "Data",
    "label": "Village",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zypm",
+   "fieldtype": "Column Break"
   }
  ],
  "is_published_field": "published",
  "links": [],
- "modified": "2024-01-16 16:50:49.702584",
+ "modified": "2024-01-20 21:53:47.596774",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "Learner-Form",

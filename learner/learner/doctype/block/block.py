@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class LearnerForm(Document):
+class Block(Document):
 	pass

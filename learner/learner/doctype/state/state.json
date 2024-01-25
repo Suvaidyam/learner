@@ -1,37 +1,27 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
- "creation": "2024-01-20 21:40:05.007506",
+ "creation": "2024-01-25 13:59:01.610778",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "block",
-  "panchayat_name"
+  "state"
  ],
  "fields": [
   {
-   "fieldname": "block",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Block",
-   "options": "\nAmnour\nGarkha",
-   "reqd": 1
-  },
-  {
-   "fieldname": "panchayat_name",
+   "fieldname": "state",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Panchayat name",
+   "label": "State",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-25 12:14:37.782238",
+ "modified": "2024-01-25 14:00:05.077121",
  "modified_by": "Administrator",
  "module": "Learner",
- "name": "Panchyat",
+ "name": "State",
  "owner": "Administrator",
  "permissions": [
   {
@@ -51,5 +41,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "panchayat_name"
+ "title_field": "state"
 }

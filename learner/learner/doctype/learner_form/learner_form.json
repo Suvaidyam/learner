@@ -1,59 +1,36 @@
 {
  "actions": [],
- "allow_guest_to_view": 1,
  "allow_rename": 1,
- "creation": "2024-01-16 15:24:52.046358",
+ "creation": "2024-01-25 11:49:53.451860",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "full_name",
-  "mobile_no",
+  "phone_zwil",
   "email",
   "fathers_name",
-  "column_break_zypm",
+  "mothers_name",
+  "column_break_dlsv",
   "state",
   "district",
   "block",
   "panchayat",
   "village",
-  "education_section",
-  "education",
-  "section_break_dcmy",
-  "published"
+  "section_break_huav",
+  "table_oktm"
  ],
  "fields": [
   {
-   "fieldname": "education",
-   "fieldtype": "Table",
-   "label": "Education",
-   "options": "Education"
-  },
-  {
-   "fieldname": "education_section",
-   "fieldtype": "Section Break",
-   "label": "Education"
-  },
-  {
-   "fieldname": "section_break_dcmy",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "published",
-   "fieldtype": "Check",
-   "label": "Published"
-  },
-  {
    "fieldname": "full_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Full Name",
    "reqd": 1
   },
   {
-   "default": "+91-",
-   "fieldname": "mobile_no",
+   "default": "+91",
+   "fieldname": "phone_zwil",
    "fieldtype": "Phone",
-   "in_list_view": 1,
    "label": "Mobile No",
    "reqd": 1
   },
@@ -70,26 +47,30 @@
    "reqd": 1
   },
   {
-   "default": "Bihar",
-   "fieldname": "state",
+   "fieldname": "mothers_name",
    "fieldtype": "Data",
-   "label": "State",
-   "read_only": 1,
+   "label": "Mother's Name",
    "reqd": 1
   },
   {
-   "default": "Saran",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State",
+   "reqd": 1
+  },
+  {
    "fieldname": "district",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "District",
-   "read_only": 1,
+   "options": "District",
    "reqd": 1
   },
   {
    "fieldname": "block",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Block",
-   "options": "\nAmnour\nGarkha",
+   "options": "Block",
    "reqd": 1
   },
   {
@@ -106,13 +87,22 @@
    "reqd": 1
   },
   {
-   "fieldname": "column_break_zypm",
+   "fieldname": "column_break_dlsv",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_huav",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_oktm",
+   "fieldtype": "Table",
+   "options": "Education"
   }
  ],
- "is_published_field": "published",
+ "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-20 21:53:47.596774",
+ "modified": "2024-01-25 14:04:41.506431",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "Learner-Form",
@@ -131,7 +121,6 @@
    "write": 1
   }
  ],
- "route": "learner-form",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

@@ -28,7 +28,7 @@
    "reqd": 1
   },
   {
-   "default": "+91",
+   "default": "+91-",
    "fieldname": "phone_zwil",
    "fieldtype": "Phone",
    "label": "Mobile No",
@@ -102,7 +102,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-25 14:04:41.506431",
+ "modified": "2024-01-27 12:04:58.849260",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "Learner-Form",

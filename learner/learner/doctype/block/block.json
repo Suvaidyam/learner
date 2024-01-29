@@ -6,6 +6,8 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "state",
+  "district",
   "block"
  ],
  "fields": [
@@ -16,11 +18,27 @@
    "label": "Block",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "State",
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "District",
+   "options": "District",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-25 14:39:36.711885",
+ "modified": "2024-01-27 15:26:33.168809",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "Block",

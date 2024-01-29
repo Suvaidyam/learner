@@ -6,16 +6,18 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "state",
+  "district",
   "block",
   "panchayat_name"
  ],
  "fields": [
   {
    "fieldname": "block",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Block",
-   "options": "\nAmnour\nGarkha",
+   "options": "Block",
    "reqd": 1
   },
   {
@@ -24,11 +26,27 @@
    "in_list_view": 1,
    "label": "Panchayat name",
    "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "State",
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "District",
+   "options": "District",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-25 12:14:37.782238",
+ "modified": "2024-01-27 15:29:15.832189",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "Panchyat",

@@ -5,6 +5,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "state",
   "district"
  ],
  "fields": [
@@ -14,11 +15,19 @@
    "in_list_view": 1,
    "label": "District",
    "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "State",
+   "options": "State",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-25 14:03:50.802279",
+ "modified": "2024-01-27 15:15:16.648437",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "District",

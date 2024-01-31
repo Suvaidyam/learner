@@ -1,17 +1,17 @@
-async function filterDistrict(key,value) {
+async function filter(key, value, doc) {
     var myurl = '/api/method/frappe.desk.search.search_link';
     return new Promise(function (resolve, reject) {
         $.ajax({
             type: 'GET',
             url: myurl,
             data: {
-                doctype: 'District',
+                doctype: doc,
                 filters: JSON.stringify({
-                    key: value
+                    [key]: value
                 }),
                 txt: ''
             },
-            success:async function (result) {
+            success: async function (result) {
                 var options = await result.message;
                 resolve(options);
             },
@@ -22,16 +22,36 @@ async function filterDistrict(key,value) {
         });
     });
 }
+async function truncateDepChild(children=[]){
+    for(let child of children){
+        frappe.web_form.set_value(child, '')
+    }
+}
 
-frappe.ready(function () {
-	frappe.web_form.on('state', async (field, value) => {
-		let ops = await filterDistrict('state',value);
-		frappe.web_form.set_df_property("district", "options", ops);
-        var field = frappe.web_form.fields_dict['district']
-        field._data = ops;
+function filterFields(parent, child, doc) {
+    frappe.web_form.on(parent, async (field, value) => {
+        let ops = await filter(parent, value, doc);
+        var field = frappe.web_form.fields_dict[child]
+        if (value) {
+            field._data = ops;
+        } else {
+            field._data = [];
+            await truncateDepChild(['district', 'block', 'panchayat'])
+        }
         field.refresh()
-        console.log('fields_disct', field)
-	});
+    });
+}
+async function truncateOptions(fields = []) {
+    for (let field of fields) {
+        frappe.web_form.fields_dict[field]._data = [];
+    }
+}
+
+frappe.ready(async function () {
+    await truncateOptions(['district', 'block', 'panchayat']);
+    filterFields('state', 'district', 'District')
+    filterFields('district', 'block', 'Block')
+    filterFields('block', 'panchayat', 'Panchyat')
 });
 
 

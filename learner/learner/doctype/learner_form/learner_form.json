@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{DD,MM,YY}-{###}",
  "creation": "2024-01-25 11:49:53.451860",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -17,7 +18,9 @@
   "panchayat",
   "village",
   "section_break_huav",
-  "table_oktm"
+  "table_oktm",
+  "onboarding__status_section",
+  "application_status"
  ],
  "fields": [
   {
@@ -98,14 +101,27 @@
    "fieldname": "table_oktm",
    "fieldtype": "Table",
    "options": "Education"
+  },
+  {
+   "fieldname": "onboarding__status_section",
+   "fieldtype": "Section Break",
+   "label": "Onboarding  Status"
+  },
+  {
+   "default": "Open",
+   "fieldname": "application_status",
+   "fieldtype": "Select",
+   "label": "Application Status",
+   "options": "\nOpen\nWaiting\nAccepted\nRejected"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-27 12:04:58.849260",
+ "modified": "2024-01-31 10:29:53.915292",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "Learner-Form",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

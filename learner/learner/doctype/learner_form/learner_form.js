@@ -3,7 +3,6 @@
 
 frappe.ui.form.on("Learner-Form", {
     refresh(frm) {
-
         frm.fields_dict["district"].get_query = function (doc) {
             return {
                 filters: {
@@ -58,14 +57,6 @@ frappe.ui.form.on("Learner-Form", {
                 }
             }
         }
-        frm.set_value("district", "")
-        frm.set_value("block", "")
-
-    },
-    district: function (frm) {
-        frm.set_value("block", "")
-    },
-    block: function (frm) {
         frm.fields_dict["panchayat"].get_query = function (doc) {
             if (doc.block) {
                 return {
@@ -81,8 +72,19 @@ frappe.ui.form.on("Learner-Form", {
                 }
             }
         }
+        frm.set_value("district", "")
+        frm.set_value("block", "")
         frm.set_value("panchayat", "")
+        frm.set_value("village", "")
+
+    },
+    district: function (frm) {
+        frm.set_value("block", "")
+        frm.set_value("panchayat", "")
+        frm.set_value("village", "")
+    },
+    block: function (frm) {
+        frm.set_value("panchayat", "")
+        frm.set_value("village", "")
     }
-
-
 });

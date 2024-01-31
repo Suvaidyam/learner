@@ -1,5 +1,7 @@
 import frappe
 
+
 def get_context(context):
-	# do your magic here
-	pass
+    # Your code to populate the context goes here
+    context['custom_data'] = "Hello, this is custom data!"
+    return context

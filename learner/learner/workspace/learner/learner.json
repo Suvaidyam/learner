@@ -1,0 +1,50 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"uoctCl1SqN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Learner Dashboard</span>\",\"col\":12}},{\"id\":\"QEsW8pzKe3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Applications\",\"col\":4}},{\"id\":\"ovi6l2Z-tU\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total applications open\",\"col\":4}},{\"id\":\"kVxSwCzfQk\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total applications waiting\",\"col\":4}},{\"id\":\"0ifdCJsmPA\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Tolat applications Accepted\",\"col\":4}},{\"id\":\"Ulwkb2z24K\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total applications rejected\",\"col\":4}}]",
+ "creation": "2024-01-31 10:21:26.134676",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Learner",
+ "links": [],
+ "modified": "2024-02-01 13:33:45.483738",
+ "modified_by": "Administrator",
+ "module": "Learner",
+ "name": "Learner",
+ "number_cards": [
+  {
+   "label": "Total Applications",
+   "number_card_name": "Total Learner Applied"
+  },
+  {
+   "label": "Total applications open",
+   "number_card_name": "Total applications open"
+  },
+  {
+   "label": "Total applications waiting",
+   "number_card_name": "Total learner waiting"
+  },
+  {
+   "label": "Tolat applications Accepted",
+   "number_card_name": "Tolat Learner Accepted"
+  },
+  {
+   "label": "Total applications rejected",
+   "number_card_name": "Total learner rejected"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "Learner"
+}

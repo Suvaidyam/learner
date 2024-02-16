@@ -17,8 +17,17 @@
   "block",
   "panchayat",
   "village",
-  "section_break_huav",
-  "table_oktm",
+  "education_details_section",
+  "10th_details_column",
+  "10th_passing_year",
+  "total_obtain_marks",
+  "obtain_marks_in_science",
+  "obtain_marks_in_maths",
+  "12th_details_column",
+  "12th_passing_year",
+  "stream",
+  "total_obtain_marks12",
+  "obtain_marks_in_maths12",
   "onboarding__status_section",
   "application_status"
  ],
@@ -94,15 +103,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_huav",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "table_oktm",
-   "fieldtype": "Table",
-   "options": "Education"
-  },
-  {
    "fieldname": "onboarding__status_section",
    "fieldtype": "Section Break",
    "label": "Onboarding  Status"
@@ -113,11 +113,78 @@
    "fieldtype": "Select",
    "label": "Application Status",
    "options": "\nOpen\nWaiting\nAccepted\nRejected"
+  },
+  {
+   "fieldname": "education_details_section",
+   "fieldtype": "Section Break",
+   "label": "Education Details"
+  },
+  {
+   "fieldname": "10th_passing_year",
+   "fieldtype": "Select",
+   "label": "10th Passing year",
+   "options": "\n2024\n2023\n2022\n2021\n2020\n2019\n2018\n2017\n2016\n2015",
+   "reqd": 1
+  },
+  {
+   "fieldname": "10th_details_column",
+   "fieldtype": "Column Break",
+   "label": "10th Details"
+  },
+  {
+   "fieldname": "12th_details_column",
+   "fieldtype": "Column Break",
+   "label": "12th Details"
+  },
+  {
+   "fieldname": "12th_passing_year",
+   "fieldtype": "Select",
+   "label": "12th Passing year",
+   "options": "\n2024\n2023\n2022\n2021\n2020\n2019\n2018\n2017\n2016\n2015",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stream",
+   "fieldtype": "Select",
+   "label": "Stream",
+   "options": "\nScience\nArts\nCommerce",
+   "reqd": 1
+  },
+  {
+   "fieldname": "obtain_marks_in_science",
+   "fieldtype": "Data",
+   "label": "Obtain marks in Science",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_obtain_marks",
+   "fieldtype": "Int",
+   "label": "Total obtain marks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_obtain_marks12",
+   "fieldtype": "Data",
+   "label": "Total obtain marks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "obtain_marks_in_maths",
+   "fieldtype": "Data",
+   "label": "Obtain marks in maths",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.stream ==\"Science\"",
+   "fieldname": "obtain_marks_in_maths12",
+   "fieldtype": "Data",
+   "label": "Obtain marks in maths",
+   "mandatory_depends_on": "eval:doc.stream ==\"Science\""
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-31 10:29:53.915292",
+ "modified": "2024-02-16 19:12:32.997689",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "Learner-Form",

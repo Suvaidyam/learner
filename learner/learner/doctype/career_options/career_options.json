@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:option",
  "creation": "2024-02-25 01:53:38.618932",
@@ -18,7 +19,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-25 01:59:02.577280",
+ "modified": "2024-02-25 02:45:02.108410",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "Career Options",

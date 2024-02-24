@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"uoctCl1SqN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Learner Dashboard</span>\",\"col\":12}},{\"id\":\"QEsW8pzKe3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Applications\",\"col\":4}},{\"id\":\"ovi6l2Z-tU\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total applications open\",\"col\":4}},{\"id\":\"kVxSwCzfQk\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total applications waiting\",\"col\":4}},{\"id\":\"0ifdCJsmPA\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Tolat applications Accepted\",\"col\":4}},{\"id\":\"Ulwkb2z24K\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total applications rejected\",\"col\":4}}]",
+ "content": "[{\"id\":\"uoctCl1SqN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Learner Dashboard</span>\",\"col\":12}},{\"id\":\"QEsW8pzKe3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Applications\",\"col\":4}},{\"id\":\"ovi6l2Z-tU\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total applications open\",\"col\":4}},{\"id\":\"kVxSwCzfQk\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total applications waiting\",\"col\":4}},{\"id\":\"0ifdCJsmPA\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Tolat applications Accepted\",\"col\":4}},{\"id\":\"Ulwkb2z24K\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total applications rejected\",\"col\":4}},{\"id\":\"MNu3PAsZGx\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"NeH6MPTjwi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"apply-for-learner\",\"col\":3}}]",
  "creation": "2024-01-31 10:21:26.134676",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Learner",
  "links": [],
- "modified": "2024-02-01 13:33:45.483738",
+ "modified": "2024-02-24 18:46:44.384200",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "Learner",
@@ -45,6 +45,14 @@
  "quick_lists": [],
  "roles": [],
  "sequence_id": 1.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "apply-for-learner",
+   "type": "URL",
+   "url": "/app/web-form/apply-for-learner"
+  }
+ ],
  "title": "Learner"
 }

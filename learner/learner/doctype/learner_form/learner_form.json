@@ -27,8 +27,11 @@
   "passing_year_12th",
   "stream",
   "main_subject",
-  "total_obtain_marks12",
   "obtain_marks_in_maths12",
+  "total_obtain_marks12",
+  "what_next_section",
+  "career_option",
+  "column_break_famq",
   "onboarding__status_section",
   "application_status"
  ],
@@ -189,11 +192,26 @@
    "label": "12th Passing year",
    "options": "\n2024\n2023\n2022\n2021\n2020\n2019\n2018\n2017\n2016\n2015",
    "reqd": 1
+  },
+  {
+   "fieldname": "what_next_section",
+   "fieldtype": "Section Break",
+   "label": "What Next?"
+  },
+  {
+   "fieldname": "career_option",
+   "fieldtype": "Link",
+   "label": "Career Option",
+   "options": "Career Options"
+  },
+  {
+   "fieldname": "column_break_famq",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-24 18:18:46.453003",
+ "modified": "2024-02-25 02:10:58.526421",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "Learner-Form",

@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2024-01-25 14:02:42.907527",
  "doctype": "DocType",
@@ -27,7 +28,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-27 15:15:16.648437",
+ "modified": "2024-02-17 17:44:01.816890",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "District",

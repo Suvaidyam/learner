@@ -7,7 +7,7 @@
  "allow_print": 0,
  "anonymous": 0,
  "apply_document_permissions": 0,
- "button_label": "Save",
+ "button_label": "Send",
  "condition_json": "[]",
  "creation": "2024-02-24 18:48:04.715354",
  "doc_type": "Contact us",
@@ -18,7 +18,7 @@
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2024-02-24 18:48:18.550881",
+ "modified": "2024-02-25 01:08:55.463985",
  "modified_by": "Administrator",
  "module": "suvaidyamapi",
  "name": "contact-us",
@@ -28,6 +28,9 @@
  "show_attachments": 0,
  "show_list": 0,
  "show_sidebar": 0,
+ "success_message": "We appreciate your message. Our team will be in touch with you shortly",
+ "success_title": "Thanks <span style=\"font-size:30px;\">&#129395;</span>",
+ "success_url": "https://learn.suvaidyam.com",
  "title": "Contact us",
  "web_form_fields": [
   {

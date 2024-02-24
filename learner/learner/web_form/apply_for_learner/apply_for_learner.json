@@ -7,7 +7,7 @@
  "allow_print": 0,
  "anonymous": 0,
  "apply_document_permissions": 0,
- "button_label": "Save",
+ "button_label": "Submit",
  "condition_json": "[]",
  "creation": "2024-01-29 12:02:57.480641",
  "doc_type": "Learner-Form",
@@ -18,7 +18,7 @@
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2024-02-24 19:29:11.264165",
+ "modified": "2024-02-25 01:02:15.797549",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "apply-for-learner",
@@ -28,6 +28,9 @@
  "show_attachments": 0,
  "show_list": 0,
  "show_sidebar": 0,
+ "success_message": "We're grateful for your interest in Suvaidyam",
+ "success_title": "Thanks <span style=\"font-size:30px;\">&#129395;</span>",
+ "success_url": "https://www.suvaidyam.com/",
  "title": "Apply-for-learner",
  "web_form_fields": [
   {
@@ -315,19 +318,6 @@
   },
   {
    "allow_read_on_all_link_options": 0,
-   "fieldname": "total_obtain_marks12",
-   "fieldtype": "Data",
-   "hidden": 0,
-   "label": "Total obtain marks",
-   "max_length": 0,
-   "max_value": 0,
-   "precision": "",
-   "read_only": 0,
-   "reqd": 1,
-   "show_in_filter": 0
-  },
-  {
-   "allow_read_on_all_link_options": 0,
    "depends_on": "eval:doc.stream ==\"Commerce\" || doc.main_subject == \"Maths\"",
    "fieldname": "obtain_marks_in_maths12",
    "fieldtype": "Data",
@@ -339,6 +329,19 @@
    "precision": "",
    "read_only": 0,
    "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "total_obtain_marks12",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Total obtain marks",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 1,
    "show_in_filter": 0
   }
  ]

@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"EpdQVPhPeU\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Suvaidyam</span>\",\"col\":12}},{\"id\":\"RQpHs19vtF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Contact Us\",\"col\":3}},{\"id\":\"03PAEUMEN2\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"bBdpapi7jP\",\"type\":\"paragraph\",\"data\":{\"text\":\"Web Forms\",\"col\":12}}]",
+ "content": "[{\"id\":\"EpdQVPhPeU\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Suvaidyam</span>\",\"col\":12}},{\"id\":\"RQpHs19vtF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Contact Us\",\"col\":3}},{\"id\":\"bBdpapi7jP\",\"type\":\"paragraph\",\"data\":{\"text\":\"Web Forms\",\"col\":12}},{\"id\":\"B5I965w1Oj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"contact-us\",\"col\":3}}]",
  "creation": "2024-02-24 18:43:45.891439",
  "custom_blocks": [],
  "docstatus": 0,
@@ -8,12 +8,12 @@
  "for_user": "",
  "hide_custom": 0,
  "icon": "website",
- "idx": 0,
+ "idx": 1,
  "indicator_color": "",
  "is_hidden": 0,
  "label": "Suvaidyam.com",
  "links": [],
- "modified": "2024-02-24 18:47:16.313745",
+ "modified": "2024-02-24 19:33:08.862058",
  "modified_by": "Administrator",
  "module": "suvaidyamapi",
  "name": "Suvaidyam.com",
@@ -25,6 +25,13 @@
  "roles": [],
  "sequence_id": 2.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "contact-us",
+   "type": "URL",
+   "url": "/app/web-form/contact-us"
+  },
   {
    "color": "Grey",
    "doc_view": "List",

@@ -92,5 +92,12 @@ frappe.ui.form.on("Learner-Form", {
             }
         }
         frm.set_value("village", "")
+    },
+    result_not_yet_declared:function(frm){
+        frm.set_value("passing_year_12th", "")
+        frm.set_value("stream", "")
+        frm.set_value("main_subject", "")
+        frm.set_value("obtain_marks_in_maths12", "")
+        frm.set_value("total_obtain_marks12", "")
     }
 });

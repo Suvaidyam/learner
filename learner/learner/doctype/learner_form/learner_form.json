@@ -22,6 +22,7 @@
   "obtain_marks_in_science",
   "obtain_marks_in_maths",
   "12th_details_column",
+  "result_not_yet_declared",
   "passing_year_12th",
   "stream",
   "main_subject",
@@ -120,11 +121,12 @@
    "label": "12th Details"
   },
   {
+   "depends_on": "eval:!doc.result_not_yet_declared",
    "fieldname": "stream",
    "fieldtype": "Select",
    "label": "Stream",
-   "options": "\nScience\nArts\nCommerce",
-   "reqd": 1
+   "mandatory_depends_on": "eval:!doc.result_not_yet_declared",
+   "options": "\nScience\nArts\nCommerce"
   },
   {
    "fieldname": "obtain_marks_in_science",
@@ -139,10 +141,11 @@
    "reqd": 1
   },
   {
+   "depends_on": "eval:!doc.result_not_yet_declared",
    "fieldname": "total_obtain_marks12",
    "fieldtype": "Data",
    "label": "Total obtain marks",
-   "reqd": 1
+   "mandatory_depends_on": "eval:!doc.result_not_yet_declared"
   },
   {
    "fieldname": "obtain_marks_in_maths",
@@ -173,11 +176,12 @@
    "reqd": 1
   },
   {
+   "depends_on": "eval:!doc.result_not_yet_declared",
    "fieldname": "passing_year_12th",
    "fieldtype": "Select",
    "label": "12th Passing year",
-   "options": "\n2024\n2023\n2022\n2021\n2020\n2019\n2018\n2017\n2016\n2015",
-   "reqd": 1
+   "mandatory_depends_on": "eval:!doc.result_not_yet_declared",
+   "options": "\n2024\n2023\n2022\n2021\n2020\n2019\n2018\n2017\n2016\n2015"
   },
   {
    "fieldname": "what_next_section",
@@ -188,16 +192,25 @@
    "fieldname": "career_option",
    "fieldtype": "Link",
    "label": "Career Option",
-   "options": "Career Options"
+   "options": "Career Options",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_famq",
    "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "result_not_yet_declared",
+   "fieldtype": "Check",
+   "label": "Result not yet declared",
+   "options": "\n2024\n2023\n2022\n2021\n2020\n2019\n2018\n2017\n2016\n2015",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-25 02:17:12.241383",
+ "modified": "2024-02-25 11:55:41.459635",
  "modified_by": "Administrator",
  "module": "Learner",
  "name": "Learner-Form",

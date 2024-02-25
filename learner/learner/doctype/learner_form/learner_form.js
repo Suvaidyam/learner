@@ -84,7 +84,13 @@ frappe.ui.form.on("Learner-Form", {
     //     frm.set_value("village", "")
     // },
     block: function (frm) {
-        frm.set_value("panchayat", "")
+        frm.fields_dict["panchayat"].get_query = function (doc) {
+            return {
+                filters: {
+                    "block": frm.doc.block,
+                }
+            }
+        }
         frm.set_value("village", "")
     }
 });

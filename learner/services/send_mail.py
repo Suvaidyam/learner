@@ -12,18 +12,31 @@ class MSG:
         accepted = f"""
         <html>
           <body class="bg-light">
-            <div style="background:#F8F9FA" class="p-2">
-                <div style="border-radius:10px;background:white;padding:10px;">
-                    <div style="border-radius:8px;background:#efefef;padding:10px;font-size:15px;">
-                    <p style="font-size:15px">Hello {name} 👋,</p>
-                    <p style="font-size:15px">I hope you are doing well. 
-                        We are excited to inform you that after a thorough review of the 
-                        applications, you have been selected for the Suvaidyam Learner Program.</p>
-                     Congratulations 😍 on this achievement! Your enthusiasm for learning and your 
-                     commitment to personal and professional development stood out among the applicants,
-                       and we believe that you will contribute significantly to the program.
-                </div>
-             </div>
+           <div class="p-2" style="background:white;padding:5px;">
+           <img src="https://learn.suvaidyam.com/files/svalogo7dbab9.png" alt="Suvaidyam" width="50" style="display:block;margin:auto;padding-bottom:15px">
+              <div style="border-radius:10px;border:1px solid grey;padding:10px;font-size:15px;">
+                <p style="font-size:15px;font-weight:600;">Hello {name} 👋,</p>
+                <p style="font-size:15px">I hope you are doing well. 
+                    We are excited to inform you that after a thorough review of the 
+                    applications, you have been selected for the Suvaidyam Learner Program.</p>
+                  Congratulations 😍 on this achievement! Your enthusiasm for learning and your 
+                  commitment to personal and professional development stood out among the applicants,
+                    and we believe that you will contribute significantly to the program.
+              </div>
+              <div style="display:flex;padding-top:8px;">
+                  <a href="https://www.instagram.com/suvaidyam" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    
+                  </a>
+                  <a href="https://www.whatsapp.com/channel/0029VaAg20iG3R3rCSYYjL30" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    
+                  </a>
+                  <a href="https://www.youtube.com/@suvaidyam" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    
+                  </a>
+                  <a href="https://www.linkedin.com/company/suvaidyam/?originalSubdomain=in" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    
+                  </a>
+              </div>
             </div>
           </body>
         </html>
@@ -31,17 +44,30 @@ class MSG:
         rejected = f"""
         <html>
           <body class="bg-light">
-            <div style="background:#F8F9FA" class="p-2">
-                <div style="border-radius:10px;background:white;padding:10px;">
-                    <div style="border-radius:8px;background:#efefef;padding:10px;font-size:15px;">
-                    <p style="font-size:15px">Hello {name} 👋,</p>
-                    <p style="font-size:15px">I trust this message finds you well.
-                      We appreciate the time and effort you invested in applying for the Suvaidyam Learner Program.</p>
-                     <p>After careful consideration and review of all applications, we regret to inform you that your application was not selected 😔 for the program. While we received numerous impressive applications, the selection process was highly competitive.</p>
-                     <p>We commend your interest in the program and encourage you to continue pursuing your passion for learning and professional development. The decision-making process was challenging, and unfortunately, we were unable to accommodate all qualified candidates.</p>
-                     <p>We genuinely appreciate your interest in our program and wish you the best in your future endeavors. Thank you for your understanding.</p>
-                </div>
-             </div>
+           <div class="p-2" style="background:white;padding:5px;">
+            <img src="https://learn.suvaidyam.com/files/svalogo7dbab9.png" alt="Suvaidyam" width="50" style="display:block;margin:auto;padding-bottom:15px">
+              <div style="border-radius:10px;border:1px solid grey;padding:10px;font-size:15px;">
+                <p style="font-size:15px;font-weight:600;">Hello {name} 👋,</p>
+                <p style="font-size:15px">I trust this message finds you well.
+                  We appreciate the time and effort you invested in applying for the Suvaidyam Learner Program.</p>
+                  <p>After careful consideration and review of all applications, we regret to inform you that your application was not selected 😔 for the program. While we received numerous impressive applications, the selection process was highly competitive.</p>
+                  <p>We commend your interest in the program and encourage you to continue pursuing your passion for learning and professional development. The decision-making process was challenging, and unfortunately, we were unable to accommodate all qualified candidates.</p>
+                  <p>We genuinely appreciate your interest in our program and wish you the best in your future endeavors. Thank you for your understanding.</p>
+              </div>
+              <div style="display:flex;padding-top:8px;">
+                  <div href="https://www.instagram.com/suvaidyam" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    
+                  </div>
+                  <div href="https://www.whatsapp.com/channel/0029VaAg20iG3R3rCSYYjL30" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    
+                  </div>
+                  <div href="https://www.youtube.com/@suvaidyam" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    
+                  </div>
+                  <div href="https://www.linkedin.com/company/suvaidyam/?originalSubdomain=in" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    
+                  </div>
+              </div>
             </div>
           </body>
         </html>
@@ -62,7 +88,7 @@ class MSG:
         </html>
         """
         
-        body = 'accepted' if subject == 'Accepted' else (rejected if subject == 'Rejected' else admin)  
+        body = accepted if subject == 'Accepted' else (rejected if subject == 'Rejected' else admin)  
         message = MIMEMultipart()
         message['From'] = 'Suvaidyam <{}>'.format(sender_email)
         message['To'] = receiver_email

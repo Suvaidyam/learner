@@ -6,6 +6,8 @@ from frappe.model.document import Document
 from learner.services.send_mail import MSG
 
 class LearnerForm(Document):
+	def after_insert(self):
+		MSG.send_email(self.full_name,self.email,"Applied")
 	def on_update(self):
 		if self.application_status =='Accepted':
 		
@@ -33,5 +35,7 @@ class LearnerForm(Document):
 				"career_option":self.career_option,
 			}
 			MSG.send_email(self.full_name,'samar.suvaidyam@gmail.com',self.application_status,data)
+
+
 
 	

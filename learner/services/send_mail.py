@@ -13,7 +13,7 @@ class MSG:
         <html>
           <body class="bg-light">
            <div class="p-2" style="background:white;padding:5px;">
-           <img src="https://learn.suvaidyam.com/files/svalogo7dbab9.png" alt="Suvaidyam" width="50" style="display:block;margin:auto;padding-bottom:15px">
+           <img src="https://res.cloudinary.com/dkb3hvxhf/image/upload/v1709007859/SecondaryLogoColor_1_qnpkoy.png" alt="Suvaidyam" width="200" style="display:block;margin:auto;padding-bottom:15px">
               <div style="border-radius:10px;border:1px solid grey;padding:10px;font-size:15px;">
                 <p style="font-size:15px;font-weight:600;">Hello {name} 👋,</p>
                 <p style="font-size:15px">I hope you are doing well. 
@@ -25,15 +25,19 @@ class MSG:
               </div>
               <div style="display:flex;padding-top:8px;">
                   <a href="https://www.instagram.com/suvaidyam" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
-                    
+                    <img src="https://res.cloudinary.com/dkb3hvxhf/image/upload/v1709008582/insta_a9nghw.png" style="border-radius:10px;" width="100%"/>
                   </a>
                   <a href="https://www.whatsapp.com/channel/0029VaAg20iG3R3rCSYYjL30" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
-                    
+                    <img src="https://res.cloudinary.com/dkb3hvxhf/image/upload/v1709008589/whats_rzokoe.png" style="border-radius:10px;" width="100%"/>
+                  
+                  
                   </a>
                   <a href="https://www.youtube.com/@suvaidyam" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    <img src="https://res.cloudinary.com/dkb3hvxhf/image/upload/v1709008596/youtube_ukjh7i.png" style="border-radius:10px;" width="100%"/>
                     
                   </a>
                   <a href="https://www.linkedin.com/company/suvaidyam/?originalSubdomain=in" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    <img src="https://res.cloudinary.com/dkb3hvxhf/image/upload/v1709009320/link_tova1z.png" style="border-radius:10px;" width="100%"/>
                     
                   </a>
               </div>
@@ -45,8 +49,8 @@ class MSG:
         <html>
           <body class="bg-light">
            <div class="p-2" style="background:white;padding:5px;">
-            <img src="https://learn.suvaidyam.com/files/svalogo7dbab9.png" alt="Suvaidyam" width="50" style="display:block;margin:auto;padding-bottom:15px">
-              <div style="border-radius:10px;border:1px solid grey;padding:10px;font-size:15px;">
+            <img src="https://res.cloudinary.com/dkb3hvxhf/image/upload/v1709007859/SecondaryLogoColor_1_qnpkoy.png" alt="Suvaidyam" width="200" style="display:block;margin:auto;padding-bottom:15px">
+               <div style="border-radius:10px;border:1px solid grey;padding:10px;font-size:15px;">
                 <p style="font-size:15px;font-weight:600;">Hello {name} 👋,</p>
                 <p style="font-size:15px">I trust this message finds you well.
                   We appreciate the time and effort you invested in applying for the Suvaidyam Learner Program.</p>
@@ -55,18 +59,22 @@ class MSG:
                   <p>We genuinely appreciate your interest in our program and wish you the best in your future endeavors. Thank you for your understanding.</p>
               </div>
               <div style="display:flex;padding-top:8px;">
-                  <div href="https://www.instagram.com/suvaidyam" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                  <a href="https://www.instagram.com/suvaidyam" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    <img src="https://res.cloudinary.com/dkb3hvxhf/image/upload/v1709008582/insta_a9nghw.png" style="border-radius:10px;" width="100%"/>
+                  </a>
+                  <a href="https://www.whatsapp.com/channel/0029VaAg20iG3R3rCSYYjL30" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    <img src="https://res.cloudinary.com/dkb3hvxhf/image/upload/v1709008589/whats_rzokoe.png" style="border-radius:10px;" width="100%"/>
+                  
+                  
+                  </a>
+                  <a href="https://www.youtube.com/@suvaidyam" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    <img src="https://res.cloudinary.com/dkb3hvxhf/image/upload/v1709008596/youtube_ukjh7i.png" style="border-radius:10px;" width="100%"/>
                     
-                  </div>
-                  <div href="https://www.whatsapp.com/channel/0029VaAg20iG3R3rCSYYjL30" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                  </a>
+                  <a href="https://www.linkedin.com/company/suvaidyam/?originalSubdomain=in" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
+                    <img src="https://res.cloudinary.com/dkb3hvxhf/image/upload/v1709009320/link_tova1z.png" style="border-radius:10px;" width="100%"/>
                     
-                  </div>
-                  <div href="https://www.youtube.com/@suvaidyam" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
-                    
-                  </div>
-                  <div href="https://www.linkedin.com/company/suvaidyam/?originalSubdomain=in" style="width:35px;height:35px;cursor: pointer;border-radius:10px;background:gray;margin: 0px 7px;">
-                    
-                  </div>
+                  </a>
               </div>
             </div>
           </body>

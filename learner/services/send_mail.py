@@ -5,8 +5,8 @@ from email.mime.multipart import MIMEMultipart
 
 class MSG:
     def send_email(name,user_eamil,subjects,data=None):
-        sender_email = 'rkrahul00011@gmail.com'
-        sender_password = frappe.conf.get('mail_psw')
+        sender_email = 'abhishek.suvaidyam@gmail.com'
+        sender_password = 'zoho wphx wxaa mpwv'
         receiver_email = user_eamil
         subject = subjects
         accepted = f"""

@@ -32,6 +32,6 @@ class LearnerForm(Document):
 				"total_obtain_marks12":self.total_obtain_marks12,
 				"career_option":self.career_option,
 			}
-			MSG.send_email(self.full_name,'abhishek.suvaidyam@gmail.com',self.application_status,data)
+			MSG.send_email(self.full_name,'samar.suvaidyam@gmail.com',self.application_status,data)
 
 	

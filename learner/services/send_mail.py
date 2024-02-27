@@ -5,8 +5,8 @@ from email.mime.multipart import MIMEMultipart
 
 class MSG:
     def send_email(name,user_eamil,subjects,data=None):
-        sender_email = 'abhishek.suvaidyam@gmail.com'
-        sender_password = 'zoho wphx wxaa mpwv'
+        sender_email = 'noreply.suvaidyam@gmail.com'
+        sender_password = 'gfiw axwi tswb rvgy'
         receiver_email = user_eamil
         subject = subjects
         accepted = f"""
